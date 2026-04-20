@@ -1,4 +1,4 @@
-""""
+# Q1: Calculator using math module
 import math
 
 print("<<Menue>>")
@@ -56,8 +56,7 @@ while True:
     time.sleep(1)
     
 
-"""
-import os
+
 
 
   
