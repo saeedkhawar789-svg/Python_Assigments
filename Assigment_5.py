@@ -1,22 +1,4 @@
-#Q2
-def outer(a,b):
-    def inner():
-        return a+b
-    result=inner()+5
-    return result
-    
-print(outer(12,2))
-
-#Q3
-def num_sum(n):
-    if n==0:
-        return 0
-    else:
-        return n+num_sum(n-1)
-
-print(num_sum(10))
-
-#Q1
+#Q1 Palindrome Number.
 
 def Palindrome_num():
     num=input("Enter a Number:")
@@ -28,7 +10,25 @@ def Palindrome_num():
 
 Palindrome_num()
 
-#Q4
+#Q2 Nested Function (Addition + 5).
+def outer(a,b):
+    def inner():
+        return a+b
+    result=inner()+5
+    return result
+    
+print(outer(12,2))
+
+#Q3 Sum of Numbers (Recursion).
+def num_sum(n):
+    if n==0:
+        return 0
+    else:
+        return n+num_sum(n-1)
+
+print(num_sum(10))
+
+#Q4 Leap Year Checker.
 def leap(year):
     if year%400==0:
         print("Leap Year")
@@ -43,7 +43,7 @@ year=int(input("Enter a year:"))
 leap(year)
 
 
-# Q5
+# Q5 Menu Program (Even, Table, Calculator, Largest).
 def even_num():
     n=int(input("Enter a number:"))
     for i in range(1,n+1):
