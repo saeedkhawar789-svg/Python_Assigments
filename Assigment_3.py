@@ -1,19 +1,4 @@
-#2   
-for i in range(1,11):
-    if i %2!= 0:
-        continue
-    print(i)
-
-#5
-num = int(input("Enter a number:"))
-for i in range(1,21):
-    if i == num:
-        print("num given")
-        break
-else:
-    print("Num are not given")
-
-#1
+#1 Login System (Username & Password Check).
 while True:
     user = str(input("Enter username:"))
     password =int(input("Enter password:"))
@@ -26,19 +11,14 @@ while True:
         print("welcome user")
     break
 
-#4
-password="1234"
-attempts=0
-while attempts<3:
-    user=input("enter password:")
-    if user == password:
-        print("Acces granted")
-        break
-    else:
-        print("Acces denied")
-        attempts+=1
+#2 Print Even Numbers (1 to 10).
+for i in range(1,11):
+    if i %2!= 0:
+        continue
+    print(i)
 
-#3
+
+#3 Marks Grading System (Pass/Fail/Excellent).
 for i in range(5):
     marks=int(input("marks:"))
     if marks<0: 
@@ -50,8 +30,29 @@ for i in range(5):
         print("Pass")
     else:
         print("Fail")
-    
-#6
+
+#4 Password Attempts (3 Tries Login System).
+password="1234"
+attempts=0
+while attempts<3:
+    user=input("enter password:")
+    if user == password:
+        print("Acces granted")
+        break
+    else:
+        print("Acces denied")
+        attempts+=1
+
+#5 Number Search in Range (1 to 20).
+num = int(input("Enter a number:"))
+for i in range(1,21):
+    if i == num:
+        print("num given")
+        break
+else:
+    print("Num are not given")
+  
+#6 Age Category Checker (Minor/Adult/Senior).
 for i in range(5):
     age = int(input("Age:"))
     if age < 0:
@@ -63,16 +64,13 @@ for i in range(5):
     else:
         print("Minor")
 
-#7
+#7 Even Number Filter Until -1 Stop.
 while True:
     num = int(input("Number:"))
     if num == -1:
         break
     if num %2!= 0:
         continue
-    print("Even number:",num)
-
-
 
 
 
