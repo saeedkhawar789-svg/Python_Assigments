@@ -149,6 +149,4 @@ for s,m in students.items():
 students["Ali"]=90
 #d
 for s,m in students.items():
-    print(s,m)
-
-
+    print(s,m)  
